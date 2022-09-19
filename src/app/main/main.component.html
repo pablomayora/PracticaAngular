@@ -1,0 +1,115 @@
+<main >
+    <section id="seccion1" class="section">
+        <h2>CURSOS DISPONIBLES</h2>
+
+       
+            <div class="containerP">
+                
+                <div class="cardP" onclick="">
+                    <h2 class="tituloCard" >PROGRAMACION WEB</h2>
+                   <img src="assets/ArgentinaPrograma.jpg"  alt="PresionaFuncion">
+                   <h4>HTML CSS JS</h4>
+                  
+                    <a href="pag2.html">Resumen Curso</a>
+                   
+                 
+                </div>
+                <div class="cardP" >
+                    <h2 class="tituloCard" >Angular</h2>
+                   <img src="assets/proton.png"  alt="PresionaFuncion">
+                   <h4>Programacion con Angular</h4>
+                  
+                    <a href="pag2.html">Resumen Curso</a>
+                   
+                 
+                </div>
+                <div class="cardP" >
+                    <h2 class="tituloCard" >WORDPRESS</h2>
+                   <img src="assets/wordpress.png"  alt="PresionaFuncion">
+                   <h4>HTML CSS JS</h4>
+                  
+                    <a href="pag2.html">Resumen Curso</a>
+                   
+                 
+                </div>
+                
+                <div class="card2P" >
+                    <h2 class="tituloCard" >AngularPrueba</h2>
+        
+                   <p>NombreUsuario:{{Nombre}}</p>
+                   <p>{{TextoDeRegistro}}</p>
+                  Registrado:<input type="radio" value="SI" name="Registrado" (click)="UsuarioRegistrado($event)"/>
+                  NoRegistrado: <input type="radio" value="NO" name="Registrado" (click)="UsuarioRegistrado($event)" />
+                  IngresaNombre:<input type="text" [(ngModel)]="Nombre">
+                </div>
+
+
+
+            </div>
+        
+    </section>   
+  
+    <section id="seccion2" class="section">
+
+        <app-minicalculadora></app-minicalculadora>
+
+    </section>
+
+    <section id="seccion3" class="section">
+
+        <app-directivas></app-directivas>
+
+    </section>
+
+    <section id="seccion3" class="section">
+
+        <div class="container">
+            <div class="col"><h2>FORMULARIO DE INCRIPCION DE EMPLEADOS</h2></div>
+            <br><br>
+                <form class="form-group row">
+                    <div class="form-group col-md-3">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="nombre" class="form-control" [(ngModel)]="CuadroNombre"/>
+                    </div>
+                <!--Apellido-->
+                    <div class="form-group col-md-3">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" [(ngModel)]="CuadroApellido"/>
+                    </div>
+                <!--Cargo-->
+                <div class="form-group col-md-3">
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" name="cargo" id="cargo" placeholder="cargo" class="form-control" [(ngModel)]="CuadroCargo"/>
+                </div>
+                  <!--Salario-->
+                  <div class="form-group col-md-3">
+                    <label for="salario">Salario:</label>
+                    <input type="text" name="salario" id="salario" placeholder="salario" class="form-control" [(ngModel)]="CuadroSalario"/>
+                </div>
+
+                <br><br> <br>
+
+                <div class="col">
+                    <button type="submit"  class="btn btn-primary" (click)="AgregarEmpleado()">Contratado</button>
+
+                </div>
+                
+                
+                
+                
+                
+                
+                </form>
+
+
+
+
+        </div>
+
+        <h2>Esta es la Caja de empleados que se comunica con Main que es su Componente padre:</h2>
+    <app-caja-empleados *ngFor="let x of empleados, let i=index" [empleadoLista]="x" [indice]="i"></app-caja-empleados>
+       
+    </section>
+
+
+</main>     

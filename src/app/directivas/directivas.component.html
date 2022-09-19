@@ -1,0 +1,31 @@
+<h2 class="bg-primary">DIRECTIVAS</h2>
+<h3>Directiva NngIF</h3>
+
+<h2 class="">{{titulo}}</h2>
+
+<form>
+    <input type="text" placeholder="Nombre Completo" name="nombre" [(ngModel)]="nombre"><br>
+    <input type="text" placeholder="Apellidos" name="apellido" [(ngModel)]="apellido"><br>
+    <input type="text" placeholder="Cargo" name="cargo"[(ngModel)]="cargo">
+    <input type="submit" value="Registrar" class="btn btn-primary" (click)="registrar()"><br>
+
+
+
+
+</form>
+
+<br><br><br>
+
+<p class="bg-success" *ngIf="Registrado==true; else SinRegistrar"><span [ngStyle]="{color:cargo=='director'? 'blue':'black'}">{{cargo}}:</span>{{mensaje}}</p>
+
+<ng-template  #SinRegistrar>
+
+
+        <p>NADIE SE HA REGISTRADO </p>
+
+</ng-template>
+<br><br><br>
+<ul>
+    <li *ngFor="let x of entradas; let i=index">  <span class="border border-1 rounded">{{x.titulo}} </span> Entrada : {{i+1}}</li>
+
+</ul>

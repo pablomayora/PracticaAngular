@@ -1,0 +1,18 @@
+<h2>{{titlle}}</h2>
+
+<form>
+    Numero1:<input  type="text" name="" id="" [(ngModel)]="numero1" name="numero1"><br>
+    
+    Numero2: <input type="text" name="" id="" [(ngModel)]="numero2" name="numero2"><br>
+    
+    Numero3: <input type="text" name="" id="" [(ngModel)]="numero3" name="numero3"><br>
+    
+    Numero4: <input type="text" name="" id="" [(ngModel)]="numero4" name="numero4"><br>
+
+    <input type="submit" class="btn btn-primary" id="boton" value="+" (click)="sumar()" >
+    <input type="submit" class="btn btn-primary" id="boton"value="-" (click)="restar()">
+    <input type="submit" class="btn btn-primary" id="boton"value="x" (click)="multiplicar()">
+
+</form>
+
+<h3  class="form-control" id="Caja" *ngIf="mostrar==true">{{resultado}}</h3>

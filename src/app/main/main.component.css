@@ -1,0 +1,100 @@
+main{
+    background-color:#ff7675 ;
+    height: auto;
+   
+}
+.section{
+    padding-top:1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: var(--container-width);
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+
+ul{
+    text-align: start;
+}
+/****++++ESTILO PARA LA CARD++++*****/
+.tituloCard{
+    text-align: center;
+    font-size: 1rem;
+    /*margin-top: 0.2rem ;*/
+    font-weight: bold;
+}
+.containerP{
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.containerP .cardP{
+    width: 300px;
+    height:50% ;
+    border:1px solid black;
+    border-radius:8px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+
+.containerP .card2P{
+    width: 300px;
+    height:50% ;
+    border:1px solid black;
+    border-radius:8px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.containerP .cardP:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2) ;
+}
+.containerP .cardP img{
+    width:70% ;
+    height:50% ;
+}
+.containerP .cardP h4{
+    
+    font-weight: 600;
+    
+}
+.container .card p{
+    padding:0 1 rem  ;
+    font-weight: 300 ;
+}
+.container .card a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px dotted tomato;
+    color:tomato;
+    transition: all 0.5s ease;}
+.container .card {
+    padding:0 1 rem  ;
+    font-weight: 300 ;
+}
+
+.container .card input{
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1rem;
+    
+}
