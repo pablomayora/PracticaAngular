@@ -1,18 +1,19 @@
-<aside #panel class="panel">
+<aside  [ngClass]="myClass ?'panel' : 'panel is-active'"> 
   <nav class="menu">
-      <a href="#seccion1">Cursos Disponibles</a>
-      <a href="#seccion2">Seccion 2</a>
-      <a href="#seccion3">Seccion 3</a>
-      <a href="#seccion4">Seccion 4</a>
-      <a href="#seccion5">Seccion 5</a>
+      <a href="#seccion1" (click)="CambioClase()">Cursos Disponibles</a>
+      <a href="#seccion2" (click)="CambioClase()">MiniCalculadora</a>
+      <a href="#seccion3" (click)="CambioClase()">Directivas</a>
+      <a href="#seccion4" (click)="CambioClase()">Formulario Inscripcion</a>
+      
   </nav>   
 </aside>
 
 
 
 
-<button class="hamburger hamburger--minus panel-btn "  type="button" >
+<button class="hamburger hamburger--minus panel-btn "(click)="CambioClase()"  type="button" >
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
 </button>
+

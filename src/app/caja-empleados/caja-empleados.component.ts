@@ -18,4 +18,13 @@ export class CajaEmpleadosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  Posicion(){
+    var data =confirm('DEBES POSICIONARTE AL INICIO DE LA LA PAGINA PARA MODIFICAR EL EMPLEADO')
+    if(data){
+      alert ("GRACIAS POR TU PACIENCIA AMIGO SOY UN POLLUELO")
+    }
+    else(alert(":("))
+  }
+
+
 }

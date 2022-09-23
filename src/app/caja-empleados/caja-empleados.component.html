@@ -1,15 +1,17 @@
 
 
 
-<div class="container">
+<div id="seccion4" class="container">
     <div class="row">
         <div class="col">
+
+        <a  [routerLink]="['/actualiza',indice]" (click)="Posicion()"> 
             <div >
 
                {{indice}}: {{empleadoLista.nombre}} {{empleadoLista.apellido}} {{empleadoLista.cargo}}
 
             </div>
-
+        </a>   
         </div>
 
 

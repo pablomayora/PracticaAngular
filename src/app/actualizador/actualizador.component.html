@@ -1,0 +1,42 @@
+<div class="container" id="actualizador">
+    <div class="col"><h2>ACTUALIZADOR DE EMPLEADOS</h2></div>
+    <br><br>
+        <form class="form-group row">
+            <div class="form-group col-md-3">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="nombre" class="form-control" [(ngModel)]="CuadroNombre"/>
+            </div>
+        <!--Apellido-->
+            <div class="form-group col-md-3">
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" [(ngModel)]="CuadroApellido"/>
+            </div>
+        <!--Cargo-->
+        <div class="form-group col-md-3">
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" id="cargo" placeholder="cargo" class="form-control" [(ngModel)]="CuadroCargo"/>
+        </div>
+          <!--Salario-->
+          <div class="form-group col-md-3">
+            <label for="salario">Salario:</label>
+            <input type="text" name="salario" id="salario" placeholder="salario" class="form-control" [(ngModel)]="CuadroSalario"/>
+        </div>
+
+        <br><br> <br>
+
+       
+            <button type="submit"  class="btn btn-primary" (click)="ActualizarEmpleado()">ACTUALIZAR EMPLEADO</button>
+
+    
+        <button class="btn btn-warning" (click)="volverHome()">
+            INICIO
+        </button>
+        
+        
+    
+        </form>
+
+
+
+
+</div>
